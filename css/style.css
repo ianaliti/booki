@@ -33,24 +33,25 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    height: 79px;
-    width: 161.09px;
-    padding: 30px, 50px, 30px, 50px;
-    gap: 10px;
 }
 
 .logo img {
-    background-size: cover;
-    width: 61.9px;
+    width: 62px;
     height: 19px;
 }
 
 .menu {
     margin: 0 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
 }
 
-.menu a {
-    gap: 68px;
+.menu a:hover {
+    border-top: solid 3px #0065FC;
+    color: #0065FC;
+    line-height: 79px;
 }
 
 /* info_group */
@@ -58,8 +59,8 @@ header {
 .info_group {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-   gap: 35px;
+    gap: 20px;
+    margin: 35px 0 35px;
 }
 
 .headline h1 {
@@ -70,7 +71,6 @@ header {
 
 .headline p {
     font-size: 16px;
-    margin: 0;
 }
 
 /* Search-bar */
@@ -90,13 +90,21 @@ header {
     align-items: center;
     width: 377px;
     height: 49px;
-    border-radius: 15px;
-    border: 1px solid #F2F2F2;
-    gap: 24px;
 }
 
+                        /* ????? Border */
+
 .search-bar input {
-    border: none;
+    border-top: 1px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 0 24px;
+    height: 47px;
+}
+
+.search-bar input:focus {
+    outline: none;
 }
 
 .search-bar button {
@@ -110,10 +118,23 @@ header {
     width: 140px;
 }
 
+.search-bar button i {
+    display: none;
+}
+
 
 /* Filter_bar */
 
 .filter_bar {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 18px;
+
+}
+
+.filtres {
     display: inline-flex;
     align-items: center;
     gap: 15px;
@@ -125,29 +146,37 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    border-radius: 25px;
+    height: 48px;
+    border-radius: 50px;
     border: solid 2px #D9D9D9;
-    padding: 4px 19px 4px 19px;
+    padding: 0 19px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.filter:hover {
+    background-color: #DEEBFF;
 }
 
 .filter i {
     margin-right: 10px;
 }
 
+
 /* Infobar */
 
 .infobar {
     display: inline-flex;
     align-items: center;
+    /* height: 24px; */
 }
 
 .info_icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 24px;
-    height: 24px;
+    width: 22px;
+    height: 22px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     margin-right: 10px;
@@ -157,7 +186,6 @@ header {
 /* card_main */
 
 .offers_main p {
-    margin-top: 0;
     font-weight: 700;
     font-size: 22px;
 }
@@ -168,12 +196,12 @@ header {
     gap: 30px;         
 }
 
-.card_main img {
-    object-fit: contain;
+/* .card_main img {
+    object-fit: cover;
     width: 24vw;
-    height: 24vw;
+    height: 124px;
     border-top-right-radius: 20px;
-}
+} */
 
 .main-container {
     width: 100%;
@@ -196,13 +224,16 @@ a {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
+    width: 100%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
     width: 100%;
-    height: 136px;
+    height: 100px;
+    object-fit: cover;
     border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .card-title {
@@ -282,6 +313,10 @@ a {
 
 /* activités */
 
+.activités {
+    margin: 35px 0 35px;
+}
+
 .frame14 {
     display: inline-flex;
     justify-content: center;
@@ -301,6 +336,7 @@ a {
 
 footer {
     display: inline-flex;
+    margin: 35px 0 35px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
