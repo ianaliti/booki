@@ -22,7 +22,7 @@ body {
 /* Header */
 
 header {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0;
@@ -31,7 +31,7 @@ header {
 }
 
 .logo {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -43,7 +43,7 @@ header {
 
 .menu {
     margin: 0 50px;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 68px;
@@ -87,7 +87,7 @@ header {
 }
 
 .search-bar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     width: 377px;
     height: 49px;
@@ -127,7 +127,7 @@ header {
 /* Filter_bar */
 
 .filter_bar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 15px;
     font-weight: 700;
@@ -136,7 +136,7 @@ header {
 }
 
 .filtres {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 15px;
     font-weight: 700;
@@ -144,7 +144,7 @@ header {
 }
 
 .filter {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 48px;
@@ -166,7 +166,7 @@ header {
 /* Infobar */
 
 .infobar {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     /* height: 24px; */
 }
@@ -188,22 +188,6 @@ header {
 
 
 /* card_main */
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 15px; 
-    padding: 0;
-    justify-content: space-between;
-    margin: 30px 0;
-}
-
-.cards_item {
-    display: flex;
-    gap: 30px;
-}
-
 .main-container {
     width: 100%;
     max-width: 1440px;
@@ -221,13 +205,27 @@ a {
     font-size: 22px;
 }
 
-.hebergements .card {
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.cards_item {
+    width: 28%;
+    margin: 0 35px 30px 0;
+}
+
+.card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    min-width: 240px;
+    width: 100%;
 }
+
 
 .hebergements .card img {
     width: 100%;
@@ -338,8 +336,13 @@ a {
     padding: 30px;
 }
 
+.activités h3 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
 .activités_frame14 {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -347,12 +350,14 @@ a {
 
 .card_activités {
     height: 439px;
+    width: 33%;
 }
 
 .activités_frame14 .card_activités img {
     width: 100%;
     height: 380px;
     border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 
@@ -360,8 +365,14 @@ a {
 /* footer */
 
 footer {
-    display: inline-flex;
-    margin: 35px 0 35px;
+    display: flex;
+    width: 100%;
+    background-color: #F2F2F2;
+}
+
+.footer_section {
+    width: 33%;
+    margin: 0 30px;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
