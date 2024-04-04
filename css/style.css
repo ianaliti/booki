@@ -15,6 +15,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -60,7 +61,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin: 35px 0 35px;
+    margin: 10px 0 35px;
 }
 
 .headline h1 {
@@ -162,7 +163,6 @@ header {
     margin-right: 10px;
 }
 
-
 /* Infobar */
 
 .infobar {
@@ -182,26 +182,27 @@ header {
     margin-right: 10px;
 }
 
+.infobar p {
+    margin: 0;
+}
+
 
 /* card_main */
 
-.offers_main p {
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.card_main {
-    display: inline-flex;
+.cards {
+    display: flex;
     flex-wrap: wrap;
-    gap: 30px;         
+    list-style: none;
+    gap: 15px; 
+    padding: 0;
+    justify-content: space-between;
+    margin: 30px 0;
 }
 
-/* .card_main img {
-    object-fit: cover;
-    width: 24vw;
-    height: 124px;
-    border-top-right-radius: 20px;
-} */
+.cards_item {
+    display: flex;
+    gap: 30px;
+}
 
 .main-container {
     width: 100%;
@@ -215,28 +216,37 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+.hebergements .section-title {
     margin: 0;
     font-size: 22px;
 }
 
-.card {
+.hebergements .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    width: 100%;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    min-width: 240px;
 }
 
-.card img {
+.hebergements .card img {
     width: 100%;
-    height: 100px;
+    height: 124px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
 
-.card-title {
+.hebergements .card-content {
+    margin:0 10px 10px;
+}
+.hebergements .card p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.hebergements .card h3 {
+    font-weight: 700;
     font-size: 16px;
 }
 
@@ -246,6 +256,16 @@ a {
 
 .neutral-star {
     color: var(--main-bg-color)
+}
+
+.cards_hebergements_p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.hebergements h2 {
+    margin: 0;
+    font-size: 22px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -314,19 +334,24 @@ a {
 /* activités */
 
 .activités {
-    margin: 35px 0 35px;
+    margin: 30px 0;
+    padding: 30px;
 }
 
-.frame14 {
+.activités_frame14 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    gap: 30px;
 }
 
-.frame14 .card img {
-    width: 100px;
-    height: 160px;
+.card_activités {
+    height: 439px;
+}
+
+.activités_frame14 .card_activités img {
+    width: 100%;
+    height: 380px;
     border-top-right-radius: 20px;
 }
 
