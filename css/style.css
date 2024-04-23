@@ -60,7 +60,7 @@ header {
 .menu a:hover {
     border-top: solid 3px #0065FC;
     color: #0065FC;
-    line-height: 79px;
+    line-height: 76px;
 }
 
 /* info_group */
@@ -88,16 +88,15 @@ header {
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
-    background-color:#F2F2F2;
+    background-color: #F2F2F2;
     display: flex;
     justify-content: center;
-    align-items: center ;
+    align-items: center;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    /* width: 377px; */
     height: 49px;
 }
 
@@ -176,7 +175,6 @@ header {
 .infobar {
     display: flex;
     align-items: center;
-    /* height: 24px; */
 }
 
 .info_icon {
@@ -237,11 +235,12 @@ a {
 }
 
 .hebergements .card-content {
-    margin:0 10px 10px;
+    margin: 0 10px 10px;
 }
+
 .hebergements .card p {
     font-weight: 400;
-    font-size: 14px; 
+    font-size: 14px;
     margin: 8px 0;
 }
 
@@ -263,6 +262,7 @@ a {
     font-weight: 700;
     font-size: 18px;
 }
+
 .hebergements h2 {
     margin: 0;
     font-size: 22px;
@@ -369,6 +369,12 @@ a {
     height: auto;
 }
 
+.activités_name p {
+    font-weight: 700;
+    font-size: 16px;
+    margin-left: 19px;
+}
+
 
 /* footer */
 
@@ -381,6 +387,11 @@ footer {
 .footer_section {
     width: 33%;
     margin: 0 30px;
+}
+
+.footer_section h6 {
+    font-size: 18px;
+    margin: 20px 0 0;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -446,37 +457,37 @@ footer {
         flex-direction: column;
     }
 
-   .logo {
+    .logo {
         display: flex;
         justify-content: center;
-   }
+    }
 
-   .logo img {
+    .logo img {
         display: flex;
         justify-content: center;
         align-items: center;
-   }
-   
-   .menu {
+    }
+
+    .menu {
         width: 100%;
         margin-bottom: 30px;
-        line-height: 79px;
         font-size: 16px;
         gap: 0;
-   }
+    }
 
-   .menu a {
+    .menu a {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
-   }
+        line-height: 50px;
+    }
 
-   .menu a:hover {
+    .menu a:hover {
         border-top: none;
         border-bottom: solid 3px #0065FC;
         color: #0065FC;
-        line-height: 79px;
+        line-height: 40px;
     }
 
     .main-container {
@@ -563,12 +574,12 @@ footer {
     .activités_frame14 {
         display: flex;
         flex-direction: column;
-    }    
+    }
 
     .card_activités {
         width: 100%;
     }
-    
+
     .activités_frame14 .card_activités img {
         height: 143px;
         width: 100%;
@@ -576,8 +587,9 @@ footer {
 
     footer {
         display: block;
-        padding: 30px;
+        padding: 30px 0;
         width: 100%;
+        margin: 0;
     }
 
     footer h6 {
@@ -592,5 +604,5 @@ footer {
     .activités_name {
         height: auto;
     }
-    
+
 }
