@@ -200,9 +200,14 @@ a {
     text-decoration: none;
 }
 
-.hebergements .section-title {
-    margin: 0;
+.section-title {
     font-size: 22px;
+}
+
+.hebergements-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cards {
@@ -261,11 +266,6 @@ a {
 .cards_hebergements_p {
     font-weight: 700;
     font-size: 18px;
-}
-
-.hebergements h2 {
-    margin: 0;
-    font-size: 22px;
 }
 
 /****** Hebergements And Populaires ***********/
@@ -333,29 +333,29 @@ a {
 
 /* activités */
 
-.activités {
+.activites {
     margin: 30px 0;
     padding: 30px;
 }
 
-.activités h3 {
+.activites h3 {
     font-weight: 700;
     font-size: 22px;
 }
 
-.activités_frame14 {
+.activites_frame14 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.card_activités {
+.card_activites {
     width: 33%;
     padding: 0;
 }
 
-.activités_frame14 .card_activités img {
+.activites_frame14 .card_activites img {
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -363,18 +363,17 @@ a {
     border-top-left-radius: 20px;
 }
 
-.activités_name {
+.activites_name {
     padding: 0 5px;
     display: flex;
     height: auto;
 }
 
-.activités_name p {
+.activites_name p {
     font-weight: 700;
     font-size: 16px;
     margin-left: 19px;
 }
-
 
 /* footer */
 
@@ -440,11 +439,11 @@ footer {
         font-size: 13px;
     }
 
-    .activités_frame14 .card_activités img {
+    .activites_frame14 .card_activites img {
         height: 200px;
     }
 
-    .activités_name {
+    .activites_name {
         height: 70px;
     }
 }
@@ -570,25 +569,23 @@ footer {
         width: 100%;
     }
 
-    .activités_frame14 {
+    .activites_frame14 {
         display: flex;
         flex-direction: column;
     }
 
-    .card_activités {
+    .card_activites {
         width: 100%;
     }
 
-    .activités_frame14 .card_activités img {
+    .activites_frame14 .card_activites img {
         height: 143px;
         width: 100%;
     }
 
     footer {
         display: block;
-        padding: 30px 0;
-        width: 100%;
-        margin: 0;
+        padding: 30px;
     }
 
     footer h6 {
@@ -600,7 +597,7 @@ footer {
         margin-bottom: 50px;
     }
 
-    .activités_name {
+    .activites_name {
         height: auto;
     }
 
