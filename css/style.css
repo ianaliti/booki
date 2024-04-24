@@ -380,13 +380,12 @@ a {
 
 footer {
     display: flex;
-    width: 100%;
+    padding: 20px;
     background-color: #F2F2F2;
 }
 
 .footer_section {
     width: 33%;
-    margin: 0 30px;
 }
 
 .footer_section h6 {
